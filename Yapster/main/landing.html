@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YapSter - Connect, Share, Enjoy</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="logo">YapSter</div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#" id="login-link">Login</a></li>
+                <li><a href="#" id="signup-link">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="hero-content">
+            <h1>Discover YapSter</h1>
+            <p>Your space to connect, share, and enjoy seamless experiences.</p>
+            <div class="cta-container">
+                <button class="btn primary-btn">Get Started</button>
+                <button class="btn secondary-btn">Login</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section" id="features">
+        <h2>Why Choose YapSter?</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/1041/1041888.png" alt="Chat Icon">
+                <h3>Real-Time Chat</h3>
+                <p>Engage instantly with friends and communities.</p>
+            </div>
+            <div class="feature-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/4211/4211386.png" alt="Image Icon">
+                <h3>Stunning Images</h3>
+                <p>Share your world in high definition.</p>
+            </div>
+            <div class="feature-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/2989/2989988.png" alt="Reels Icon">
+                <h3>Dynamic Reels</h3>
+                <p>Watch and create captivating short videos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Signup Modal -->
+    <div class="modal" id="signup-modal">
+        <div class="modal-content">
+            <span class="close-btn" id="close-signup-modal">×</span>
+            <div class="modal-header">
+                <h2>Create Your YapSter Account</h2>
+            </div>
+            <form class="signup-form" id="signup-form">
+                <div class="input-group">
+                    <input type="text" id="username" required>
+                    <label for="username">Username</label>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="email" required>
+                    <label for="email">Email</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="password" required>
+                    <label for="password">Password</label>
+                    <span class="toggle-password" id="toggle-password">👁️</span>
+                    <p class="error-message" id="password-error"></p>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="confirm-password" required>
+                    <label for="confirm-password">Confirm Password</label>
+                    <span class="toggle-password" id="toggle-confirm-password">👁️</span>
+                    <p class="error-message" id="confirm-error"></p>
+                </div>
+                <button type="submit" class="submit-btn" id="signup-submit-btn">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="modal" id="login-modal">
+        <div class="modal-content">
+            <span class="close-btn" id="close-login-modal">×</span>
+            <div class="modal-header">
+                <h2>Login to YapSter</h2>
+            </div>
+            <form class="login-form" id="login-form">
+                <div class="input-group">
+                    <input type="email" id="login-email" required>
+                    <label for="login-email">Email</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="login-password" required>
+                    <label for="login-password">Password</label>
+                    <span class="toggle-password" id="toggle-login-password">👁️</span>
+                    <p class="error-message" id="login-error"></p>
+                </div>
+                <button type="submit" class="submit-btn" id="login-submit-btn">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <p>© 2025 YapSter. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
